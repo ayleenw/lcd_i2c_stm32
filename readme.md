@@ -6,6 +6,8 @@ Based on the code from Controllerstech: https://controllerstech.com/lcd-20x4-usi
 
 ## Usage
 
+Place .h in Inc folder, .c in Src folder of your STM32 project.
+
 Initialize once with lcd_init().
 
 Use lcd_write(const char \*txt, uint8_t line, uint8_t column) to send texts to the display. This wraps the lcd_send_cmd (to set line and column) and lcd_send_string (the actual text to send) in one function.
